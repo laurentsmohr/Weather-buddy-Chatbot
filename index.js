@@ -94,7 +94,7 @@ app.post('/weather', (request, response) => {
       let tense = dateIndex === 0 ? 'is' : 'will be';
 
       if(request.body.queryResult.intent.displayName === 'Celsius follow up') {
-        dialogflowResponse.fulfillmentText = `Sure! ${fahrenheit} degrees Fahrenheit converts to ${celsius} degrees Celsius.`
+        dialogflowResponse.fulfillmentText = `No problem! ${fahrenheit} degrees Fahrenheit converts to ${celsius} degrees Celsius.`
       } else {
 
         dialogflowResponse.fulfillmentText = 
