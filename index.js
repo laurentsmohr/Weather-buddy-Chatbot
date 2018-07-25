@@ -6,7 +6,7 @@ const morgan = require('morgan');
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
 
-const PORT = process.env.port || 8000;
+const PORT = process.env.PORT || 8000;
 
 const urls = {
   getWoeid: 'https://www.metaweather.com/api/location/search/?query=',
